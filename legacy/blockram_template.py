@@ -1,6 +1,8 @@
-# Legacy artifact - kept for historical reference only.
-# This 2017 snippet never ran as written (see legacy/README.md for the
-# known defects). Use the `memgen` tool instead - see ../README.md.
+# Legacy template - kept for historical reference only.
+# This was a starting-point snippet, not a standalone program: copy it,
+# insert your own data-generation function where marked, and adapt the
+# remaining pieces (see legacy/README.md for the expected edits).
+# For a complete, ready-to-use tool, see ../README.md.
 #**********************************************************
 #COE file creation
 #This code snippet is used to create an initialization file
