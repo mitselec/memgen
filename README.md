@@ -1,9 +1,10 @@
 # memgen
 
-Generate memory initialization files for FPGA synthesis tools — a modernized
-version of the old [BlockRam_COE](https://github.com/mitselec/BlockRam_COE)
-snippet for creating Xilinx Block RAM coefficient files in Python. The
-original 2017 script is preserved in [`legacy/`](legacy/).
+Generate memory initialization files for FPGA synthesis tools. This
+repository grew out of the old
+[BlockRam_COE](https://github.com/mitselec/BlockRam_COE) snippet for
+creating Xilinx Block RAM coefficient files in Python; the original 2017
+script is preserved in [`legacy/`](legacy/).
 
 Supported output formats:
 

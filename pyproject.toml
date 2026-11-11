@@ -21,7 +21,7 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/mitselec/BlockRam_COE"
+Homepage = "https://github.com/mitselec/memgen"
 
 [project.scripts]
 memgen = "memgen.cli:main"
