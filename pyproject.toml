@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "memgen"
+version = "1.0.0"
+description = "Generate memory initialization files (.coe, .mem, .mif) for Xilinx Vivado and Intel Quartus"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+authors = [{ name = "mitselec" }]
+requires-python = ">=3.8"
+keywords = ["fpga", "xilinx", "vivado", "quartus", "bram", "coe", "mem", "mif", "verilog", "vhdl"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Software Development :: Embedded Systems",
+]
+
+[project.urls]
+Homepage = "https://github.com/mitselec/BlockRam_COE"
+
+[project.scripts]
+memgen = "memgen.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

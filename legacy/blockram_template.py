@@ -1,3 +1,6 @@
+# Legacy artifact - kept for historical reference only.
+# This 2017 snippet never ran as written (see legacy/README.md for the
+# known defects). Use the `memgen` tool instead - see ../README.md.
 #**********************************************************
 #COE file creation
 #This code snippet is used to create an initialization file
