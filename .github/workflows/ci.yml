@@ -9,11 +9,19 @@ on:
 jobs:
   test:
     name: Test (Python ${{ matrix.python-version }})
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
     strategy:
       fail-fast: false
+      # Python 3.8/3.9 have no prebuilt binaries on ubuntu-24.04 (the
+      # ubuntu-latest image), so they run on ubuntu-22.04 instead.
       matrix:
-        python-version: ["3.8", "3.9", "3.10", "3.11", "3.12", "3.13"]
+        include:
+          - { python-version: "3.8",  os: ubuntu-22.04 }
+          - { python-version: "3.9",  os: ubuntu-22.04 }
+          - { python-version: "3.10", os: ubuntu-latest }
+          - { python-version: "3.11", os: ubuntu-latest }
+          - { python-version: "3.12", os: ubuntu-latest }
+          - { python-version: "3.13", os: ubuntu-latest }
     steps:
       - uses: actions/checkout@v4
 
