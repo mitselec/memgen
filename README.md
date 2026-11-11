@@ -1,5 +1,7 @@
 # memgen
 
+[![CI](https://github.com/mitselec/memgen/actions/workflows/ci.yml/badge.svg)](https://github.com/mitselec/memgen/actions/workflows/ci.yml)
+
 Generate memory initialization files for FPGA synthesis tools. This
 repository grew out of the old
 [BlockRam_COE](https://github.com/mitselec/BlockRam_COE) snippet for
